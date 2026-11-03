@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本周涨星榜 · GitPlain</title>
+<meta name="description" content="GitPlain 本周涨星榜：最近 7 天 GitHub 上新增 star 最多的 100 个项目，按真实 star 事件统计，每周更新。每个都配一句大白话，讲清它是什么、适合谁。">
+<link rel="canonical" href="https://www.gitplain.com/weekly.html">
+<meta property="og:title" content="本周涨星榜 · GitPlain">
+<meta property="og:description" content="最近 7 天 GitHub 上新增 star 最多的 100 个项目，按真实 star 事件统计。">
+<meta property="og:image" content="https://www.gitplain.com/og-cover.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.gitplain.com/weekly.html">
+<meta property="og:site_name" content="GitPlain">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.gitplain.com/og-cover.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="assets/site.css?v=20261103">
+</head>
+<body data-page="weekly">
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="13" fill="#0d1117"/><rect x="10" y="10" width="44" height="33" rx="7" fill="#ffffff"/><path d="M19 22l-5 4.5 5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M45 22l5 4.5-5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M29 31l6-10" stroke="#f5a623" stroke-width="3.4" stroke-linecap="round"/><rect x="18" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="27.5" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="37" y="47" width="9" height="6" rx="3" fill="#0d1117"/></svg>
+      </span>
+      GitPlain
+    </a>
+    <nav class="topnav-links" aria-label="主导航">
+      <a href="discover.html">发现</a>
+      <a href="browse.html">全部项目</a>
+      <a href="weekly.html" aria-current="page">周榜</a>
+      <a href="about.html">关于</a>
+    </nav>
+    <div class="topnav-right">
+      <a class="nav-search" href="browse.html" aria-label="搜索项目">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+          <circle cx="7.8" cy="7.8" r="5" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M11.7 11.7 15 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a class="nav-cta" href="browse.html">开始逛</a>
+    </div>
+  </div>
+</header>
+
+<div class="subnav">
+  <div class="wrap subnav-inner">
+    <div class="subnav-left">
+      <h2 class="subnav-title">本周涨星榜</h2>
+      <span class="subnav-note" id="weekLabel">第 — 周 · —</span>
+    </div>
+    <p class="subnav-caption">最近 7 天真实新增 star · 每周一更新</p>
+  </div>
+</div>
+
+<main class="page">
+  <div class="wrap">
+
+    <section class="pagehead" aria-labelledby="pageTitle">
+      <p class="eyebrow" id="eyebrow">WEEKLY RANKING</p>
+      <h1 class="pagehead-title" id="pageTitle">本周涨星榜</h1>
+      <p class="pagehead-lead">这一周里 star 涨得最快的 GitHub 项目都在这儿。每个都用一句大白话讲清：它是做什么的、适合谁看、值不值得你花时间。</p>
+      <p class="pagehead-meta" id="pageMeta">共 — 个项目 · 每页 10 个</p>
+    </section>
+
+    <div class="controls">
+      <div class="ctl ctl--period">
+        <div class="seg" role="group" aria-label="榜单周期">
+          <button type="button" class="seg-btn is-active" data-period="this" aria-pressed="true">本周</button>
+          <button type="button" class="seg-btn" data-period="last" aria-pressed="false">上周</button>
+        </div>
+      </div>
+      <div class="ctl ctl--cat">
+        <label class="sr-only" for="catSelect">按分类筛选</label>
+        <div class="catmenu" id="catMenu">
+          <button type="button" class="catmenu-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="catMenuList">
+            <span class="catmenu-label">全部分类</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="catmenu-list" id="catMenuList" role="listbox" aria-label="按分类筛选" hidden></ul>
+        </div>
+        <select class="select" id="catSelect" hidden>
+          <option value="">全部分类</option>
+        </select>
+      </div>
+      <p class="ctl-hint">按周涨星排序</p>
+    </div>
+
+    <section class="notice" id="staleNotice" role="status" hidden>
+      <p class="notice-text" id="staleText"></p>
+    </section>
+
+    <section class="board" aria-label="本周涨星榜榜单" aria-live="polite">
+      <p class="sr-only" id="boardStatus" role="status"></p>
+      <ol class="board-list" id="list"></ol>
+      <div class="state" id="emptyState" hidden></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="榜单分页" hidden></nav>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <p class="foot-logo">GitPlain</p>
+        <p class="foot-note">给普通人用的 GitHub 向导——把 GitHub 上「编程语言的项目」，翻译成你能看懂的。</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h3>逛 GitPlain</h3>
+          <ul>
+            <li><a href="browse.html">全部项目</a></li>
+            <li><a href="discover.html">按要做的事逛</a></li>
+            <li><a href="weekly.html">本周涨星榜</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h3>了解</h3>
+          <ul>
+            <li><a href="about.html#what">GitPlain 是什么</a></li>
+            <li><a href="about.html#why">为什么要做</a></li>
+            <li><a href="about.html#data">数据从哪来</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h3>更多</h3>
+          <ul>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="about.html#not-a-copy">我们不是复制 GitHub</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub 官网 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-legal">
+        <span>GitPlain · 2026</span>
+        <span>榜单按 GitHub 真实 star 事件统计，每周一更新，收录最近 7 天新增 star 达到门槛的项目。</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261103"></script>
+</body>
+</html>

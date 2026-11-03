@@ -1,0 +1,74 @@
+# 第三方参考文件（别人的 DESIGN.md，不随项目分发）
+ref/
+
+# 内部文档（需求单含内部对话，不公开）
+SPEC.md
+
+# 临时截图与导出
+preview-*.png
+_shots/
+_dom*.html
+_desktop.png
+_mobile.png
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+
+# ---- 生成物（build.py 一键重建，不进版本控制）----
+repo/
+data/f/
+data/page-*.json
+data/cats.json
+data/weekly.json
+data/monthly.json
+data/search-index.json
+data/s/
+data/[0-9]*/
+data/[0-9]*-[0-9]*.json
+
+# ---- 中间数据（能重新抓，但耗时长，用 data_full.json 代替）----
+repos_raw.json
+data_zh.json
+cache/
+*.part
+data.bak/
+
+# ---- 抓取缓存 ----
+progress_stars.json
+failed_hours.json
+
+# ---- 调试残留与中间备份（不进版本控制）----
+*.bak
+*.round1
+*.round2
+*.round3
+*.before_*
+*.pre_*
+data_zh.before*
+data_zh.pre_*
+progress_full*
+_*.json
+_*.py
+*.log
+*.part
+
+# ---- 归档目录（本地历史，不进版本控制）----
+_archive/
+
+# ---- 部署构建输出 ----
+dist/
+
+# ---- 本地预览服务日志 ----
+serve.log
+*.bak-*
+
+# ---- build.py 生成的页面与产物（跑 build.py 重建，不进库）----
+index.html
+browse.html
+discover.html
+discover/
+sitemap.xml

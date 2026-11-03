@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 GitPlain · 给普通人用的 GitHub 向导</title>
+<meta name="description" content="GitPlain 是什么、为什么要做、我们和 GitHub 是什么关系、数据从哪来。一个给普通人用的 GitHub 向导，把编程语言的项目翻译成你能看懂的。">
+<link rel="canonical" href="https://www.gitplain.com/about.html">
+<meta property="og:title" content="关于 GitPlain">
+<meta property="og:description" content="GitPlain 是什么、为什么要做、数据从哪来。">
+<meta property="og:image" content="https://www.gitplain.com/og-cover.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.gitplain.com/about.html">
+<meta property="og:site_name" content="GitPlain">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.gitplain.com/og-cover.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="assets/site.css?v=20261103">
+</head>
+<body data-page="about">
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="13" fill="#0d1117"/><rect x="10" y="10" width="44" height="33" rx="7" fill="#ffffff"/><path d="M19 22l-5 4.5 5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M45 22l5 4.5-5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M29 31l6-10" stroke="#f5a623" stroke-width="3.4" stroke-linecap="round"/><rect x="18" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="27.5" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="37" y="47" width="9" height="6" rx="3" fill="#0d1117"/></svg>
+      </span>
+      GitPlain
+    </a>
+    <nav class="topnav-links" aria-label="主导航">
+      <a href="discover.html">发现</a>
+      <a href="browse.html">全部项目</a>
+      <a href="weekly.html">周榜</a>
+      <a href="about.html" aria-current="page">关于</a>
+    </nav>
+    <div class="topnav-right">
+      <a class="nav-search" href="browse.html" aria-label="搜索项目">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+          <circle cx="7.8" cy="7.8" r="5" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M11.7 11.7 15 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a class="nav-cta" href="browse.html">开始逛</a>
+    </div>
+  </div>
+</header>
+
+<header class="about-hero">
+  <div class="wrap wrap--prose">
+    <p class="eyebrow">ABOUT</p>
+    <h1 class="about-title">关于 GitPlain</h1>
+    <p class="about-lead">一个给普通人用的 GitHub 向导——把 GitHub 上「编程语言的项目」，翻译成你能看懂的。</p>
+  </div>
+</header>
+
+<main class="about-body">
+  <div class="wrap wrap--prose">
+
+    <section class="about-sec" id="what">
+      <h2>GitPlain 是什么</h2>
+      <p>GitHub 上有一百多万个「用编程语言写的项目」。你不需要会编程才配用它们——但你得先知道哪个能帮到你。</p>
+      <p>GitPlain 做的事只有一件：把 GitHub 上的项目，用一句你能看懂的中国话说清楚——它是做什么的、适合谁、大概怎么用。看完你就知道，这东西跟你有关系没有。</p>
+    </section>
+
+    <section class="about-sec" id="why">
+      <h2>为什么要做</h2>
+      <p>AI 让每个人都跳过了编程，直接用 agent 做出东西。但你很快会遇上一个悖论：</p>
+      <div class="callout">
+        你想跳过编程，可一旦你的 agent「不够聪明」、做出来的东西差口气，你就会想着去 GitHub 找答案。而 GitHub 是英文的、满屏术语、翻译还不准，你根本看不出哪个项目能解决你的问题。GitHub 上明明有现成的工具或项目能直接帮到你，你却因为看不懂而错过，白白多花一周甚至一个月，去做了一个已经有、甚至更好的工具。
+      </div>
+    </section>
+
+    <section class="about-sec" id="examples">
+      <h2>两个例子</h2>
+      <ul class="example-list">
+        <li class="example">
+          <span class="example-num" aria-hidden="true">1</span>
+          <p>你是个财务，想用 AI 处理重复工作。下了一个 agent，一步步问、一步步试，花一个月才解决了你的问题。可 GitHub 上早就有现成的工具能帮到你，你本来可以直接用它——只是你当时看不懂、找不到它。</p>
+        </li>
+        <li class="example">
+          <span class="example-num" aria-hidden="true">2</span>
+          <p>你是个做自媒体的，会用 AI 但不知道怎么上手。你在 GitPlain 逛到「视频剪辑」，发现有个工具装上就能剪，效果比你自己剪还好。而当你自己去逛 GitHub 时，光翻译网页、猜术语、找工具就把人劝退了。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about-sec" id="github">
+      <h2>什么是 GitHub</h2>
+      <p>GitHub 是一个构建软件的平台。无论你是开始一个新项目，还是为现有项目做出贡献，GitHub 都能整合你在软件开发生命周期（SDLC）各个阶段所需的工具和工作流。</p>
+      <p>关于 GitHub 的更多信息，请见 <a href="https://docs.github.com/zh/get-started/start-your-journey/what-is-github" target="_blank" rel="noopener">GitHub 官方文档 · 什么是 GitHub ↗</a>。</p>
+    </section>
+
+    <section class="about-sec" id="not-a-copy">
+      <h2>我们不是复制 GitHub</h2>
+      <p>GitPlain 不搬运 GitHub 的内容，而是搭一条「AI 到 GitHub 的快速通道」：让你更快知道 GitHub 里有什么、哪个能解决你的问题、怎么用上它——让 AI 更快走进你的生活和工作。</p>
+      <p>每个项目的「打开」按钮都直接跳回原作者在 GitHub 的页面。流量归作者，版权归作者，我们只负责把门牌翻译成中文。</p>
+    </section>
+
+    <section class="about-sec" id="data">
+      <h2>数据从哪来</h2>
+      <p>全部来自 GitHub 官方公开搜索接口（<code>api.github.com/search/repositories</code>），筛选条件是星数 1,000 以上的项目，因为我们觉得这些是最快能帮到你的项目。</p>
+      <p>中文说明由仓库简介和 README 生成，偶尔会有偏差，一切数据以原仓库为准。每周更新一次。</p>
+      <p>如果你是项目作者，希望调整或移除 GitPlain 对你项目的收录，<a href="contact.html">联系我们</a>，我们会在 72 小时内处理。</p>
+    </section>
+
+    <div class="about-cta">
+      <a class="btn-primary" href="browse.html">去看全部项目</a>
+      <a class="btn-secondary" href="contact.html">联系我们</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <p class="foot-logo">GitPlain</p>
+        <p class="foot-note">给普通人用的 GitHub 向导——把 GitHub 上「编程语言的项目」，翻译成你能看懂的。</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h3>逛 GitPlain</h3>
+          <ul>
+            <li><a href="browse.html">全部项目</a></li>
+            <li><a href="discover.html">按要做的事逛</a></li>
+            <li><a href="weekly.html">本周涨星榜</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h3>了解</h3>
+          <ul>
+            <li><a href="about.html#what">GitPlain 是什么</a></li>
+            <li><a href="about.html#why">为什么要做</a></li>
+            <li><a href="about.html#data">数据从哪来</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h3>更多</h3>
+          <ul>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="about.html#not-a-copy">我们不是复制 GitHub</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub 官网 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-legal">
+        <span>GitPlain · 2026</span>
+        <span>中文说明由仓库简介和 README 生成，偶尔会有偏差，一切以原仓库为准。</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261103"></script>
+</body>
+</html>

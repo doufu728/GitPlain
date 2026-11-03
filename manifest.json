@@ -1,0 +1,23 @@
+{
+  "name": "GitPlain — 给普通人用的 GitHub 向导",
+  "short_name": "GitPlain",
+  "description": "把 GitHub 上「编程语言的项目」翻译成你能看懂的。65,856 个项目，每个都配一句大白话。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0066cc",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

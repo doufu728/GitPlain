@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_archive/
+Disallow: /dist/
+
+Sitemap: https://www.gitplain.com/sitemap.xml

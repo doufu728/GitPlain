@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} · 发现 · GitPlain</title>
+<meta name="description" content="{{LEAD}} 每个项目都配一句大白话，看完就知道它是不是你要的。">
+<link rel="canonical" href="{{CANON}}">
+<meta property="og:title" content="{{TITLE}} · GitPlain">
+<meta property="og:description" content="{{LEAD}}">
+<meta property="og:image" content="https://www.gitplain.com/og-cover.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{CANON}}">
+<meta property="og:site_name" content="GitPlain">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.gitplain.com/og-cover.png">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="../assets/site.css?v=20261103">
+</head>
+<body data-page="task">
+
+<header class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="13" fill="#0d1117"/><rect x="10" y="10" width="44" height="33" rx="7" fill="#ffffff"/><path d="M19 22l-5 4.5 5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M45 22l5 4.5-5 4.5" stroke="#0d1117" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M29 31l6-10" stroke="#f5a623" stroke-width="3.4" stroke-linecap="round"/><rect x="18" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="27.5" y="47" width="9" height="6" rx="3" fill="#0d1117"/><rect x="37" y="47" width="9" height="6" rx="3" fill="#0d1117"/></svg>
+      </span>
+      GitPlain
+    </a>
+    <nav class="topnav-links" aria-label="主导航">
+      <a href="../discover.html" aria-current="page">发现</a>
+      <a href="../browse.html">全部项目</a>
+      <a href="../weekly.html">周榜</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <div class="topnav-right">
+      <a class="nav-search" href="../browse.html" aria-label="搜索项目">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+          <circle cx="7.8" cy="7.8" r="5" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M11.7 11.7 15 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <a class="nav-cta" href="../discover.html">按场景逛</a>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+
+    <a class="back-link back-link--discover" href="../discover.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M8.5 3 4.5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      返回发现页
+    </a>
+
+    <section class="pagehead" aria-labelledby="pageTitle">
+      <p class="eyebrow" id="pageEyebrow">{{SCENE}}</p>
+      <h1 class="pagehead-title" id="pageTitle">{{TITLE}}</h1>
+      <p class="pagehead-lead" id="pageLead">{{LEAD}}</p>
+      <p class="pagehead-meta" id="pageMeta">共 {{COUNT}} 个相关项目 · 按总星数排序</p>
+    </section>
+
+    <ol class="board-list" id="list">
+{{ROWS}}
+    </ol>
+
+    <p class="board-more">想找点别的？<a href="../discover.html">回发现页看看其他事</a>，或去 <a href="../browse.html">全部项目</a> 慢慢逛。</p>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <p class="foot-logo">GitPlain</p>
+        <p class="foot-note">给普通人用的 GitHub 向导——把 GitHub 上「编程语言的项目」，翻译成你能看懂的。</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h3>逛一逛</h3>
+          <ul>
+            <li><a href="../discover.html">按要做的事逛</a></li>
+            <li><a href="../browse.html">全部项目</a></li>
+            <li><a href="../weekly.html">周榜</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h3>关于</h3>
+          <ul>
+            <li><a href="../about.html">GitPlain 是什么</a></li>
+            <li><a href="../contact.html">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-legal">GitPlain · 数据来自 GitHub 公开接口，每周更新</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/site.js?v=20261103"></script>
+</body>
+</html>
