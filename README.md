@@ -1,6 +1,8 @@
 # GitPlain
 
-**把 GitHub 项目讲成看得懂的人话。**
+<p align="center"><img src="logo.png" width="96" alt="GitPlain logo"></p>
+
+**把 GitHub 项目翻译给普通人看。**
 
 给「不懂编程、但开始用 AI 的人」看的 GitHub 项目站。
 按「你想做的事」逛，不按编程语言分；每个项目都配一句大白话，点开直达原仓库。
@@ -9,6 +11,8 @@
 - 不做榜单站 —— 追求实打实的数字，不追求好看
 
 线上地址：https://www.gitplain.com
+
+> 网站本身是没什么价值的，有价值的是可以帮助到不会编程的人玩转 GitHub。希望大家可以一起加入到这件有意义的事情！！！
 
 ---
 
@@ -21,6 +25,8 @@
 | 项目详情页 | 5,692 个（>10,000 星，可被搜索引擎收录） |
 | 周涨星数据 | 338 万条 star 事件（GH Archive 真实事件流） |
 | 最近更新日期 | 直取 `pushed_at`，覆盖 99.998% |
+
+<p align="center"><img src="homepage.png" width="720" alt="GitPlain 首页截图"></p>
 
 ## 页面结构
 
